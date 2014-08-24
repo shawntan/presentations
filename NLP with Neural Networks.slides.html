@@ -1798,7 +1798,9 @@ In&nbsp;[2]:
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="vectorised-notations">Vectorised Notations</h1>
 <p>Weighted sum of input:</p>
-<p>$$\sum_i w_ix_i = 
+<p>$$
+\begin{align}
+\sum_i w_ix_i &amp;= 
 \left[\begin{matrix}
 x_1\\
 \vdots\\
@@ -1808,7 +1810,19 @@ x_d
 w_1\\
 \vdots\\
 w_d
+\end{matrix}\right] ,&amp;
+\left[\begin{matrix}
+x_1\\
+\vdots\\
+x_d
+\end{matrix}\right]^\top
+\left[\begin{matrix}
+w_{1,1} &amp; \cdots &amp; w_{1,d'}\\
+\vdots &amp; \ddots &amp; \vdots\\
+w_{d,1} &amp; \cdots &amp; w_{d,d'}
 \end{matrix}\right]
+\end{align} = 
+\left[\begin{matrix} \sum_i w_{i,1}x_i &amp; \cdots &amp; \sum_i w_{i,d'}x_i \end{matrix} \right]
 $$</p>
 <p>Applying functions to matrices:</p>
 <p>$$
@@ -3282,6 +3296,21 @@ vo7pKuiTAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="key-contributions">Key contributions</h2>
+<p>A mixed model using averaged prediction from this neural net and a trigram beats n-grams using Kneser-Ney backoff,</p>
+<ul>
+<li>with about 24% improvement on Brown corpus and</li>
+<li>8% on AP news.</li>
+</ul>
+</div>
+</div>
+</div></section><section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="using-a-table-lookup-instead-of-one-hot-vectors">Using a table lookup instead of one-hot vectors</h3>
 <p>Using a one-hot vector to represent words allows us to continue using matrix multiplications, but it is equivalent to just extracting a single row out of the word-to-vector table.</p>
 <p>$$
@@ -3345,6 +3374,7 @@ $$</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="using-recurrent-connections">Using recurrent connections</h2>
+<h3 id="-mikolov-tomas-et-al-recurrent-neural-network-based-language-model-interspeech-2010-file-home-shawn-downloads-0c960523991065d41b000000-pdf-"><a href="file:///home/shawn/Downloads/0c960523991065d41b000000.pdf">Mikolov, Tomas, et al. &quot;Recurrent neural network based language model.&quot; INTERSPEECH. 2010.</a></h3>
 <h3 id="-mikolov-tomas-wen-tau-yih-and-geoffrey-zweig-linguistic-regularities-in-continuous-space-word-representations-hlt-naacl-2013-http-machinelearning-wustl-edu-mlpapers-paper_files-nips2013_5021-pdf-"><a href="http://machinelearning.wustl.edu/mlpapers/paper_files/NIPS2013_5021.pdf">Mikolov, Tomas, Wen-tau Yih, and Geoffrey Zweig.Linguistic Regularities in Continuous Space Word Representations.&quot; HLT-NAACL. 2013.</a></h3>
 </div>
 </div>
@@ -3718,6 +3748,22 @@ BQDE0t/uinuUKAadXgAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="key-contributions">Key contributions</h2>
+<ul>
+<li><p>Using recurrent connections as context/history instead of using windows of tokens.</p>
+</li>
+<li><p>Achieved 10.4% improvement for UPenn corpus over KN5 when predictions are averaged with other models.</p>
+</li>
+</ul>
+</div>
+</div>
+</div></section><section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="backpropagation-through-time">Backpropagation through time</h2>
 <p>BPTT works the same way as if each of the time steps were a separate layer. </p>
 </div>
@@ -3769,6 +3815,17 @@ $$</p>
 </div>
     </div></section><section>
     
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="word-representation-properties">Word representation properties</h2>
+<p>Code for the project released <a href="https://code.google.com/p/word2vec/">on Google code</a></p>
+<p>Trains data on some Wikipedia data, and then allows you to look at a word&#39;s neighbours in the vector space</p>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
@@ -4400,6 +4457,17 @@ AABiiF8AAGKIXwAAYohfAABiiF8AAGKIXwAAYvwB+8FvY5sK2koAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="key-contributions">Key contributions</h2>
+<p>Using neural networks for multi-task NLP learning: POS tagging, chunking, NER, semantic-role labeling and language models. Allow initial layers / word representations to generalise better for other tasks.</p>
+</div>
+</div>
+</div></section><section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Computing final softmax layer in output layer is time consuming. We need to compute scores for all words in the vocabulary</p>
 <p>$$
 \frac{1}{ \sum_{j=1}^{L}{e^{ x ^\top W_j }} }
@@ -4471,6 +4539,7 @@ $$</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="recursive-autoencoders">Recursive Autoencoders</h2>
 <p><a href="http://www.aclweb.org/anthology/D/D11/D11-1014.pdf">Socher, Richard, et al. &quot;Semi-supervised recursive autoencoders for predicting sentiment distributions.&quot; Proceedings of the Conference on Empirical Methods in Natural Language Processing. Association for Computational Linguistics, 2011.</a></p>
+<p><a href="http://nlp.stanford.edu/~socherr/EMNLP2013_RNTN.pdf">Socher, Richard, et al. &quot;Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank&quot;</a></p>
 </div>
 </div>
 </div></section><section>
@@ -4588,7 +4657,7 @@ AH4AZ2KTwGSBTX8AAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="auto-encoders-over-sequences">Auto-encoders over sequences</h2>
+<h2 id="auto-encoders-over-sequences-structures">Auto-encoders over sequences/structures</h2>
 <p>Minimise the errors between reproduced versions of the current input and the previous hidden-state</p>
 </div>
 </div>
@@ -4677,7 +4746,8 @@ In&nbsp;[10]:
 <p><a href="http://arxiv.org/pdf/1309.4168">Mikolov, Tomas, Quoc V. Le, and Ilya Sutskever. &quot;Exploiting similarities among languages for machine translation.&quot; arXiv preprint arXiv:1309.4168 (2013).</a></p>
 </div>
 </div>
-</div>
+</div></section><section>
+    
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
@@ -7782,7 +7852,10 @@ In&nbsp;[]:
 </div>
 
 </div>
-    </div>
+    </div></section>
+    </section><section>
+    <section>
+    
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -7793,6 +7866,25 @@ In&nbsp;[]:
 <li>Distributed word representations are useful, could explore ways of combining them like the RAE.</li>
 <li>Extracting semantic meaning from combined sentences/phrases.</li>
 <li>Successfully reconstructing sentence from sentence vector (applications in full sentence translation?)</li>
+<li><a href="http://www.kaggle.com/c/billion-word-imputation">Kaggle NLP Challenge: Billion Word Imputation</a></li>
+</ol>
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="resources">Resources</h1>
+<ol>
+<li><a href="https://www.coursera.org/course/neuralnets">Geoffrey Hinton&#39;s class</a></li>
+<li><a href="http://info.usherbrooke.ca/hlarochelle/neural_networks/content.html">Hugo Larochelle&#39;s online course</a></li>
+<li><a href="http://deeplearning.net/software/theano/">Theano tutorials and documentation</a></li>
+<li><a href="http://nlp.stanford.edu/courses/NAACL2013/">Manning and Socher&#39;s talk: NLP without magic</a></li>
 </ol>
 </div>
 </div>
