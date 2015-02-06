@@ -15,11 +15,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/2.6.2/css/reveal.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/2.6.2/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/reveal.css">
+<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
 
 <!-- For syntax highlighting -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/2.6.2/lib/css/zenburn.css">
+<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -27,14 +27,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://cdn.jsdelivr.net/reveal.js/2.6.2/css/print/pdf.css';
+        link.href = 'reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="https://cdn.jsdelivr.net/reveal.js/2.6.2/lib/js/html5shiv.js"></script>
+<script src="reveal.js/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Get Font-awesome from cdn -->
@@ -1625,6 +1625,7 @@ span#checkpoint_status,span#autosave_status{font-size:small}
 .highlight .nv { color: #19177C } /* Name.Variable */
 .highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
 .highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
 .highlight .mf { color: #666666 } /* Literal.Number.Float */
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
@@ -1721,9 +1722,7 @@ div.output_prompt {
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[2]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="o">%</span><span class="k">matplotlib</span> <span class="n">inline</span>
@@ -1957,9 +1956,7 @@ $$</p>
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[2]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
@@ -1982,8 +1979,7 @@ In&nbsp;[2]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[2]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[2]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -2000,9 +1996,7 @@ $$\frac{1}{1 + e^{- \frac{w_{2}}{1 + e^{- w_{1} x}}}}$$
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[3]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">y</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s">&quot;y&quot;</span><span class="p">)</span> 
@@ -2020,9 +2014,7 @@ In&nbsp;[3]:
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[4]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">Symbol</span><span class="p">(</span><span class="s">&quot;\delta_2&quot;</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">simplify</span><span class="p">(</span><span class="n">gradient_1</span><span class="o">/</span><span class="n">gradient_2</span><span class="p">),)</span>
@@ -2036,8 +2028,7 @@ In&nbsp;[4]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[4]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -2104,9 +2095,7 @@ $$\delta_{2} \begin{pmatrix}\frac{w_{2} x}{e^{w_{1} x} + 1}\end{pmatrix}$$
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[46]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">Image</span><span class="p">(</span><span class="s">&#39;images/bengiomodel.png&#39;</span><span class="p">)</span>
@@ -2120,8 +2109,7 @@ In&nbsp;[46]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[46]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[46]:</div>
 
 
 <div class="output_png output_subarea output_pyout">
@@ -3382,9 +3370,7 @@ $$</p>
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[3]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">Image</span><span class="p">(</span><span class="s">&#39;images/mikolovmodel.png&#39;</span><span class="p">)</span>
@@ -3398,8 +3384,7 @@ In&nbsp;[3]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[3]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
 
 
 <div class="output_png output_subarea output_pyout">
@@ -3828,9 +3813,7 @@ $$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[5]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">Image</span><span class="p">(</span><span class="s">&#39;images/wordvec.png&#39;</span><span class="p">)</span>
@@ -3844,8 +3827,7 @@ In&nbsp;[5]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[5]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
 
 
 <div class="output_png output_subarea output_pyout">
@@ -4568,9 +4550,7 @@ $$</p>
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[8]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">autoencoder</span>
@@ -4594,8 +4574,7 @@ Training...
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[8]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
 
 
 <div class="output_text output_subarea output_pyout">
@@ -4664,9 +4643,7 @@ AH4AZ2KTwGSBTX8AAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[9]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s">&quot;http://blog.wtf.sg/wp-content/uploads/2014/05/autoencoder.png&quot;</span><span class="p">)</span>
@@ -4680,8 +4657,7 @@ In&nbsp;[9]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[9]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
 
 <div class="output_html rendered_html output_subarea output_pyout">
 <img src="http://blog.wtf.sg/wp-content/uploads/2014/05/autoencoder.png"/>
@@ -4705,9 +4681,7 @@ In&nbsp;[9]:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[10]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s">&quot;http://blog.wtf.sg/wp-content/uploads/2014/05/Screenshot-from-2014-05-10-041050.png&quot;</span><span class="p">)</span>
@@ -4721,8 +4695,7 @@ In&nbsp;[10]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[10]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[10]:</div>
 
 <div class="output_html rendered_html output_subarea output_pyout">
 <img src="http://blog.wtf.sg/wp-content/uploads/2014/05/Screenshot-from-2014-05-10-041050.png"/>
@@ -4750,9 +4723,7 @@ In&nbsp;[10]:
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[11]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">Image</span><span class="p">(</span><span class="s">&quot;images/mtrans.png&quot;</span><span class="p">)</span>
@@ -4766,8 +4737,7 @@ In&nbsp;[11]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[11]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[11]:</div>
 
 
 <div class="output_png output_subarea output_pyout">
@@ -5673,9 +5643,7 @@ gOICZKUSjCcN5ZAAAAAASUVORK5CYII=
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[3]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">Image</span><span class="p">(</span><span class="s">&quot;images/equivmodel.png&quot;</span><span class="p">)</span>
@@ -5689,8 +5657,7 @@ In&nbsp;[3]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[3]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
 
 
 <div class="output_png output_subarea output_pyout">
@@ -7612,9 +7579,7 @@ YII=
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[17]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">theano</span>
@@ -7635,8 +7600,7 @@ In&nbsp;[17]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[17]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[17]:</div>
 
 
 <div class="output_text output_subarea output_pyout">
@@ -7666,9 +7630,7 @@ array(25.0)
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[19]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">gradient</span> <span class="o">=</span> <span class="n">T</span><span class="o">.</span><span class="n">grad</span><span class="p">(</span><span class="n">squared</span><span class="p">,</span><span class="n">wrt</span><span class="o">=</span><span class="n">x</span><span class="p">)</span>
@@ -7684,8 +7646,7 @@ In&nbsp;[19]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[19]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[19]:</div>
 
 
 <div class="output_text output_subarea output_pyout">
@@ -7715,9 +7676,7 @@ array(10.0)
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[49]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
@@ -7736,8 +7695,7 @@ In&nbsp;[49]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[49]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[49]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -7754,9 +7712,7 @@ $$z^{2} + 3 z - 5$$
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[50]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">diff</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">wrt</span><span class="o">=</span><span class="n">z</span><span class="p">)</span>
@@ -7770,8 +7726,7 @@ In&nbsp;[50]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[50]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[50]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -7799,9 +7754,7 @@ $$2 z + 3$$
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[45]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -7821,8 +7774,7 @@ In&nbsp;[45]:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">
-    Out[45]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[45]:</div>
 
 
 <div class="output_latex output_subarea output_pyout">
@@ -7839,9 +7791,7 @@ $$\begin{bmatrix}x_{1} y_{{1,1}} + x_{2} y_{{2,1}}, & x_{1} y_{{1,2}} + x_{2} y_
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[]:
-</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre> 
@@ -7892,9 +7842,9 @@ In&nbsp;[]:
 </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/reveal.js/2.6.2/lib/js/head.min.js"></script>
+<script src="reveal.js/lib/js/head.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/reveal.js/2.6.2/js/reveal.js"></script>
+<script src="reveal.js/js/reveal.js"></script>
 
 <script>
 
@@ -7909,16 +7859,16 @@ transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/c
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
-{ src: "https://cdn.jsdelivr.net/reveal.js/2.6.2/lib/js/classList.js", condition: function() { return !document.body.classList; } },
-{ src: "https://cdn.jsdelivr.net/reveal.js/2.6.2/plugin/highlight/highlight.js", async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-{ src: "https://cdn.jsdelivr.net/reveal.js/2.6.2/plugin/notes/notes.js", async: true, condition: function() { return !!document.body.classList; } }
+{ src: "reveal.js/lib/js/classList.js", condition: function() { return !document.body.classList; } },
+{ src: "reveal.js/plugin/highlight/highlight.js", async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+{ src: "reveal.js/plugin/notes/notes.js", async: true, condition: function() { return !!document.body.classList; } }
 ]
 });
 </script>
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({

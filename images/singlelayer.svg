@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:se="http://svg-edit.googlecode.com">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <title>Layer 1</title>
+  <polyline se:connector="svg_7 svg_8" fill="none" stroke-width="5" stroke="#000000" points="386.36669921875,262.7223205566406 326.5,295.5 266.63330078125,328.2777099609375" id="svg_10"/>
+  <polyline se:connector="svg_1 svg_7" fill="none" stroke-width="5" stroke="#000000" points="260.13330078125,176.30357360839844 323.25,197.25 386.36669921875,218.19642639160156" id="svg_9"/>
+  <circle stroke="#000000" id="svg_1" r="48.133308" cy="159.499992" cx="209.499992" stroke-width="5" fill="#FF0000"/>
+  <circle id="svg_7" stroke="#000000" r="48.133308" cy="235.000007" cx="437.000015" stroke-width="5" fill="#FF0000"/>
+  <circle id="svg_8" stroke="#000000" r="48.133308" cy="356.000007" cx="216.000015" stroke-width="5" fill="#FF0000"/>
+ </g>
+</svg>

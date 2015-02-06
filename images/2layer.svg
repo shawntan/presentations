@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:se="http://svg-edit.googlecode.com">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <title>Layer 1</title>
+  <polyline transform="translate(-2,0) " se:connector="svg_12 svg_8" fill="none" stroke-width="5" stroke="#000000" points="150.88331604003906,348.77679443359375 220.625,348.125 290.36669921875,347.47320556640625" id="svg_17"/>
+  <polyline transform="translate(-2,0) " se:connector="svg_12 svg_1" fill="none" stroke-width="5" stroke="#000000" points="150.88331604003906,302.79595947265625 218.375,240.875 285.86669921875,178.95404052734375" id="svg_16"/>
+  <polyline transform="translate(-2,0) " se:connector="svg_11 svg_8" fill="none" stroke-width="5" stroke="#000000" points="148.38330078125,177.34686279296875 219.375,239.875 290.36669921875,302.40313720703125" id="svg_15"/>
+  <polyline transform="translate(-2,0) " se:connector="svg_11 svg_1" fill="none" stroke-width="5" stroke="#000000" points="148.38330078125,132.6969757080078 217.125,132.625 285.86669921875,132.55300903320312" id="svg_13"/>
+  <polyline transform="translate(-2,0) " se:connector="svg_7 svg_8" fill="none" stroke-width="5" stroke="#000000" points="504.36669921875,253.86572265625 448,286 391.63330078125,318.13427734375" id="svg_10"/>
+  <polyline transform="translate(-2,0) " se:connector="svg_1 svg_7" fill="none" stroke-width="5" stroke="#000000" points="387.13330078125,153.93515014648438 445.75,178.75 504.36669921875,203.56484985351562" id="svg_9"/>
+  <circle stroke="#000000" id="svg_1" r="48.133308" cy="132.499992" cx="336.499992" stroke-width="5" fill="#FF0000"/>
+  <circle id="svg_7" stroke="#000000" r="48.133308" cy="225.000007" cx="555.000015" stroke-width="5" fill="#FF0000"/>
+  <circle id="svg_8" stroke="#000000" r="48.133308" cy="347.000007" cx="341.000015" stroke-width="5" fill="#FF0000"/>
+  <circle id="svg_11" stroke="#000000" r="48.133308" cy="132.749996" cx="97.749984" stroke-width="5" fill="#FF0000"/>
+  <circle id="svg_12" stroke="#000000" r="48.133308" cy="349.250011" cx="100.250007" stroke-width="5" fill="#FF0000"/>
+ </g>
+</svg>
